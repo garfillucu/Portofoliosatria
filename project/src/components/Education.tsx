@@ -25,15 +25,15 @@ export function Education() {
             ))}
           </ul>
           <div className="flex gap-2">
-            <a
-              href="public/revou-certificate.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
-            >
-              <Award className="w-5 h-5" />
-              {t('education.viewCertificate')}
-            </a>
+          <a
+            href="https://drive.google.com/file/d/1JLWGXF2wO0lxFO31pmf31i5y1pyKAkwy/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+          >
+            <Award className="w-5 h-5" />
+            {t('education.viewCertificate')}
+          </a>
             <a
               href="https://revou.co/software-engineering"
               target="_blank"
