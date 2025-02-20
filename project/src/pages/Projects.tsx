@@ -1,14 +1,13 @@
 import { Github, ExternalLink } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { projects } from '../data/projects';
-import { ProjectDetail } from '../components/ProjectDetail';
 import type { Project } from '../types';
 
 export function Projects() {
   const { t } = useLanguage();
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const navigate = useNavigate();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -33,7 +32,7 @@ export function Projects() {
   };
 
   const handleProjectClick = (project: Project) => {
-    setSelectedProject(project);
+    navigate(`/projects/${project.id}`);
   };
 
   return (
@@ -130,15 +129,6 @@ export function Projects() {
           </motion.div>
         ))}
       </motion.div>
-
-      <AnimatePresence mode="wait">
-        {selectedProject && (
-          <ProjectDetail
-            project={selectedProject}
-            onClose={() => setSelectedProject(null)}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 }

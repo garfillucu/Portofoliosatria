@@ -3,44 +3,60 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Local Food Market E-Commerce",
     description: "Full-stack e-commerce platform with real-time inventory, secure payments, and admin dashboard.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Stripe"],
+    technologies: ["React", "Next.js", "PostgreSQL", "Typescript", "Tailwind Css"],
     imageUrl: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
     liveUrl: "https://ecommerce-platform-demo.netlify.app",
     role: "Full Stack Developer",
-    duration: "3 months",
+    duration: "1 months",
     features: [
-      "User authentication and authorization",
-      "Product catalog with search and filtering",
-      "Shopping cart and wishlist management",
-      "Secure payment processing with Stripe",
-      "Real-time inventory tracking",
-      "Admin dashboard for product and order management",
-      "Order tracking and history",
-      "Responsive design for mobile and desktop"
+      "Sistem Autentikasi & Otorisasi",
+      "Login/Register dengan OTP",
+      "Form handling yang aman dengan validasi",
+      "UI/UX Modern",
+      "Dark/Light mode",
+      "Komponen yang accessible",
+      "Responsive design",
+      "Interactive elements",
+      "Carousel/Slider untuk product showcase",
+      "Charts & Grafik untuk analytics",
+      "Form & Input Management"
     ],
     responsibilities: [
-      "Developed the frontend using React and Tailwind CSS",
-      "Implemented secure payment processing with Stripe",
-      "Built RESTful APIs using Node.js and Express",
-      "Designed and implemented the database schema",
-      "Set up real-time inventory tracking with Redis",
-      "Implemented user authentication and authorization",
-      "Created admin dashboard for product management"
+      "Implementasi clean code dengan TypeScript",
+      "Setup project structure yang scalable",
+      "State management dengan Zustand",
+      "Routing dengan Next.js",
+      "Image optimization",
+      "Code splitting",
+      "SEO optimization",
+      "Lazy loading",
+      "Responsive design implementation",
+      "Accessibility standards",
+      "Cross-browser compatibility",
+      "Component reusability"
     ],
     challenges: [
-      "Implementing real-time inventory tracking across multiple servers",
-      "Ensuring secure payment processing and data handling",
-      "Optimizing performance for large product catalogs",
-      "Managing complex state across multiple components"
+      "Integrasi multiple third-party libraries",
+      "Type safety dengan TypeScript",
+      "State management yang kompleks",
+      "Performance optimization",
+      "Maintaining code quality",
+      "Ensuring responsive design",
+      "Browser compatibility",
+      "Accessibility compliance"
     ],
     achievements: [
-      "Reduced page load time by 40% through optimization",
-      "Implemented successful payment processing system",
-      "Created scalable and maintainable codebase",
-      "Achieved 95% test coverage"
+      "Modern tech stack implementation",
+      "Type-safe development environment",
+      "Scalable architecture",
+      "Accessible UI components",
+      "Clean code architecture",
+      "Reusable component library",
+      "Optimized performance",
+      "SEO-friendly implementation"
     ]
   },
   {

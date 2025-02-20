@@ -1,4 +1,4 @@
-import { X, Github, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Project } from '../types';
 import { useLanguage } from '../context/LanguageContext';
@@ -10,10 +10,6 @@ type ProjectDetailProps = {
 
 export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
   const { t } = useLanguage();
-
-  const handleModalClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-  };
 
   return (
     <motion.div
@@ -29,7 +25,7 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
         exit={{ scale: 0.9, opacity: 0 }}
         transition={{ type: "spring", damping: 20 }}
         className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
-        onClick={handleModalClick}
+        onClick={(e) => e.stopPropagation()}
       >
         <div className="relative">
           <img
@@ -41,7 +37,7 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
             onClick={onClose}
             className="absolute top-4 right-4 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors"
           >
-            <X className="w-6 h-6" />
+            <ArrowLeft className="w-6 h-6" />
           </button>
         </div>
 

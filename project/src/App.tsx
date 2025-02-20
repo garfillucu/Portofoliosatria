@@ -4,6 +4,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
+import { ProjectPage } from './pages/ProjectPage';
 import { Contact } from './pages/Contact';
 import { LoadingScreen } from './components/LoadingScreen';
 import { ParticlesBackground } from './components/ParticlesBackground';
@@ -45,6 +46,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/:id" element={<ProjectPage />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </motion.div>
